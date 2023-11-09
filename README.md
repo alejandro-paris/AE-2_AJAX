@@ -1,4 +1,4 @@
-Requerimiento 1
+## Requerimiento 1
 
 Se pide hacer una aplicación AJAX que gestione una pizzería como la actividad 1. Puedes basarte en dicha actividad para reutilizar lo que consideres o para hacerte una idea de lo que tienes que implementar junto a tu compañero. El formulario que tendremos que usar será el mismo que en dicha actividad, consúltala para más información.
 
@@ -10,7 +10,7 @@ También dispondremos de un botón de refrescar, de tal manera que cuando lo pul
 
 Valoración: 7 puntos sobre 10
 
-Requerimiento 2
+## Requerimiento 2
 
 Si pulsamos el botón de procesar el pedido, la web mostrará el resultado del precio total de la pizza. Para calcular dicho precio, el programa accederá mediante AJAX al servidor para traer la información sobre el precio del tamaño de la pizza escogido, así como el precio de los ingredientes escogidos. El precio de los ingredientes podrá ser diferente.
 
