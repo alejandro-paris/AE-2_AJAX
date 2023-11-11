@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  display: grid;
+  justify-content: center;
+}
+
+form input[type="text"],
+    form input[type="email"] {
+  width: 100%;
+  margin-bottom: 15px;
+}
+textarea {
+    width: 100%;
+    resize: none;
+}
+.contenedor_botones {
+  display: flex;
+  justify-content: center;
+
+}
+button {
+  margin: 10px 15px;
+  padding: 10px;
+  background-color: lightblue;
+  border: 0;
+  border-radius: 10px;
+  color: darkblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: lightblue;
+  outline: 2px solid darkblue;
+}
+
+
+#main_app {
+  max-width: 700px;
+  padding: 2rem;
+  
+}
+
+.anotacion {
+    font-size: 12px;
+}
+
+img {
+  max-width: 100%;
+}

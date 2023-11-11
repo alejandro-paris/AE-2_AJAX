@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimiento 2</title>
+    <link rel="stylesheet" href="assets/styles.css">
+<script src="assets/main.js" defer></script>
+
+</head>
+
+<body>
+    <div id="main_app">
+        <h1>Bienvenido a tupizza.es</h1>
+        <p>Realiza el pedido de tu pizza cumplimentando el siguiente formulario.</p>
+
+        <form id="form_pedido" action="">
+            <fieldset>
+                <legend id="leg_personal">Datos personales:</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </fieldset>
+            <fieldset id="form_personalizacion">
+                <legend>Personaliza tu pizza:</legend>
+
+            <p id="p_tamano">Selecciona el tamaño de tu pizza:</p>
+            <div id="contenedor-tamanos"></div>
+            <!-- 
+            <input type="radio" id="pequena" name="tamano" value="pequena" checked>
+            <label for="pequena">Pequeña</label><br>
+            <input type="radio" id="mediana" name="tamano" value="mediana">
+            <label for="mediana">Mediana</label><br>
+            <input type="radio" id="grande" name="tamano" value="grande">
+            <label for="grande">Grande</label><br>
+            -->
+            <p id="p_ingredientes">Añade los ingredientes que tú quieras:*</p>
+            <div id="contenedor-ingr"></div>
+
+            <!--
+            <input type="checkbox" id="jamon" name="ingredientes" value="jamon">
+            <label for="jamon">Jamón</label><br>
+            <input type="checkbox" id="champinones" name="ingredientes" value="champinones">
+            <label for="champinones">Champiñones</label><br>
+            <input type="checkbox" id="pimiento" name="ingredientes" value="pimiento">
+            <label for="pimiento">Pimiento</label><br>
+            <input type="checkbox" id="cebolla" name="ingredientes" value="cebolla">
+            <label for="cebolla">Cebolla</label><br>
+                        -->
+            <p id="p_anotacion" class="anotacion">*Por defecto, todas las pizzas tienen una base de tomate y queso fundido en horno de leña</p>
+
+            <p>Añade cualquier otro comentario a tu pedido:</p>
+            <textarea name="observaciones" id="observaciones"></textarea>
+        </fieldset>
+        <div class="contenedor_botones">
+            <button id="btn-procesar" type="button">Procesar Pedido</button>
+            <button id="btn-actualizar" type="button">Actualizar datos</button>
+        </div>
+
+        </form>
+    </div>
+    <div id="contenedor"></div>
+</body>
+
+</html>

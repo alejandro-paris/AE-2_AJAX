@@ -1,0 +1,13 @@
+{
+    "tamanos": [
+        {"nombre": "Grande", "precio": 15},
+        {"nombre": "Mediana", "precio": 10},
+        {"nombre": "Pequeña", "precio": 5}
+    ],
+    "ingredientes": [
+        {"nombre": "Jamón", "precio": 3},
+        {"nombre": "Champiñones", "precio": 1},
+        {"nombre": "Pimiento", "precio": 2},
+        {"nombre": "Cebolla", "precio": 1}
+    ]
+}
