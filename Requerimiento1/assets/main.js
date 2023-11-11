@@ -1,11 +1,11 @@
 
 
-const URL_DESTINO = "http://localhost:5500/Requerimiento1/assets/"
+const URL_DESTINO = "http://localhost:5500/Requerimiento2/assets/"
 const RECURSO = "pizzas.json"
 
 
 
-    function enviarPeticionAYAX(){
+    function enviarPeticionAyax(){
         let xmlHttp = new XMLHttpRequest()
 
         xmlHttp.onreadystatechange = function () {
