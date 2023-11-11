@@ -1,0 +1,54 @@
+{
+    "tamaños": [
+        {
+            "nombre": "Pequeña",
+            "precio": 5
+        },
+        {
+            "nombre": "Mediana",
+            "precio": 10
+        },
+        {
+            "nombre": "Grande",
+            "precio": 15
+        }
+    ],
+    "ingredientes": [
+        {
+            "nombre": "Jamón",
+            "precio": 7
+        },
+        {
+            "nombre": "Pepperoni",
+            "precio": 4
+        },
+        {
+            "nombre": "Champiñones",
+            "precio": 2
+        },
+        {
+            "nombre": "Pimiento",
+            "precio": 2
+        },
+        {
+            "nombre": "Tomate",
+            "precio": 2
+        },
+        {
+            "nombre": "Cebolla",
+            "precio": 3
+        },
+        {
+            "nombre": "Aceitunas",
+            "precio": 4
+        },
+        {
+            "nombre": "Orégano",
+            "precio": 1
+        },
+        {
+            "nombre": "Queso",
+            "precio": 3
+        }
+    ]
+}
