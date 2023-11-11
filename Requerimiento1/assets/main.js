@@ -1,6 +1,6 @@
 
 
-const URL_DESTINO = "http://localhost:5500/Requerimiento2/assets/"
+const URL_DESTINO = "http://localhost:5501/Requerimiento1/assets/"
 const RECURSO = "pizzas.json"
 
 
@@ -8,17 +8,15 @@ const RECURSO = "pizzas.json"
     function enviarPeticionAyax(){
         let xmlHttp = new XMLHttpRequest()
 
-        xmlHttp.onreadystatechange = function () {
-            if (this.readyState == 4) {
-                if (this.status == 200) {
-                    procesarRespuesta(this.responseText)
-                } else {
-                    alert("ERROR")
-                }
-            }
-        }
         xmlHttp.open('GET', URL_DESTINO + RECURSO, true)
         xmlHttp.send(null)
+        xmlHttp.onload = function(){
+            procesarRespuesta(this.responseText)
+        }
+        xmlHttp.onerror = function(){
+            alert("ERROR")
+        }
+        
     }
     
     // Crear input radio
