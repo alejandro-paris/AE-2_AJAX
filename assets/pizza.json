@@ -1,0 +1,22 @@
+
+{
+    "tamaños": 
+    [
+        { "nombre":"Pequeña", "precio": "5"},
+        { "nombre":"Mediana", "precio": "10"},
+        { "nombre":"Grande", "precio":"15"}
+        ],
+    "ingredientes": 
+    [
+        {"nombre":"Tomate","precio":"1"},
+        {"nombre":"Queso","precio":"1"},
+        {"nombre":"Cebolla","precio":"1"},
+        {"nombre":"Jamón","precio":"1"},
+        {"nombre":"Pimiento rojo","precio":"1"},
+        {"nombre":"Pimiento verde","precio":"1"},
+        {"nombre":"Pollo","precio":"1"},
+        {"nombre":"Atun","precio":"1"}
+    ]
+}
+
+
