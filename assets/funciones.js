@@ -15,6 +15,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var divIngredientes = document.getElementById("div_ingredientes");
 
+    //habilitar que solo se pueda activar los botones de Tamaños e Ingredientes una vez
+    var disableButton = function() { this.disabled = true; };
+    botonMostrarTamaño.addEventListener('click', disableButton , false);
+    botonMostrarIngredientes.addEventListener('click', disableButton , false);
+
+    //borrar pedido cuando limpiamos formulario con el boton reset
+    var botonReset = document.getElementById("reset");
+    botonReset.addEventListener("click", borrarPrecio);
+
     
     const URL_DESTINO = "http://localhost:5500/"
     const RECURSO = "/assets/ingredientes.json"
@@ -66,12 +75,14 @@ document.addEventListener("DOMContentLoaded", function() {
         //Iteramos el array de tamaños y generamos los botones radio
         for(let pz of arrayTamaños){
 
+            //creamos el elemento input radio
             var input = document.createElement("input");
             input.type="radio";
             input.id=pz.nombre.toLowerCase();
             input.name="tamaño";
             input.value= pz.precio;
 
+            //creamos el label con su texto
             var label = document.createElement("label");
             label.for=pz.nombre.toLowerCase();
 
@@ -79,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             var espacio = document.createElement("br");
 
+            //anidamos todos los nodos al div creado en html para albergar los datos
             label.appendChild(texto);
             divTamaño.appendChild(input);
             divTamaño.appendChild(label);
@@ -127,8 +139,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function calcularPrecio() {
        //// Se verifica que los campos nombre,direccion,telefono y email estan  completados, en el caso de que esten vacios salta el error (debe rellenar los campos)
-        if (nombre.value.trim() == "" || direccion.value.trim()=="" || telefono.value.trim()=="" || email.value.trim()=="") {
-            alert('[ERROR] Debe rellenar todos los campos');
+        if (nombre.value.trim() == ""){
+            alert("ERROR. Debe rellenar su nombre");
+            return false;
+        }
+        if (direccion.value.trim() == ""){
+            alert("ERROR. Debe rellenar una dirección válida");
+            return false;
+        }
+        if (telefono.value.trim() == ""){
+            alert("ERROR. Debe rellenar un teléfono");
+            return false;
+        }
+        if (email.value.trim() == ""){
+            alert("ERROR. Debe rellenar un email");
             return false;
         }
     
@@ -155,4 +179,11 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Por favor, seleccione al menos un tamaño y un ingrediente.");
         }
     }
+
+    function borrarPrecio(){
+        var precioTotalElement = document.getElementById("precioTotal");
+        precioTotalElement.textContent = "0 €";
+    }
+
+
 });
