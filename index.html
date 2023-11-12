@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario completo</title>
+    <script type="text/javascript" src="assets/funciones.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+    <div id="main_app">
+    <h2>Formulario de Pedido de Pizza</h2>
+    <form id="formularioPedido">
+
+        <table id="table_datas">
+            <tr>
+                <td>
+                    <label for="nombre">Nombre:</label>
+                </td>
+                <td>
+                    <input type="text" id="nombre" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="direccion">Dirección:</label>
+                </td>
+                <td>
+                    <input type="text" id="direccion" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="telefono">Teléfono:</label>
+                </td>
+                <td>
+                    <input type="number" id="telefono" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" id="email" required>
+                </td>
+            </tr>
+        </table>
+
+        <button id="mostrarTamaño">Selecciona el tamaño deseado</button>
+        <div id="div_tamaño"></div>
+
+       <!-- <p>Tamaño de la Pizza:</p>
+        <input type="radio" id="pequeña" name="tamaño" value="5">
+        <label for="pequena">Pequeña: 5€</label><br>
+        <input type="radio" id="mediana" name="tamaño" value="10">
+        <label for="mediana">Mediana: 10€</label><br>
+        <input type="radio" id="grande" name="tamaño" value="15">
+        <label for="grande">Grande: 15€</label><br><br>-->
+
+        <button id="mostrarIngredientes">Selecciona los ingredientes que quieras</button>
+        <div id="div_ingredientes"></div>
+
+       <!-- <p>Ingredientes:</p>
+        <table id="table_ingred">
+            <tr>
+                <td>
+                    <input type="checkbox" id="tomate" name="ingredientes" value="5">
+                </td>
+                <td>
+                    <label for="tomate">Tomate: 5€</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="queso" name="ingredientes" value="5">
+                </td>
+                <td>
+                    <label for="queso">Queso: 5€</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="pimiento Rojo" name="ingredientes" value="3">
+                </td>
+                <td>
+                    <label for="pimiento Rojo">Pimiento Rojo: 3€</label><br>
+                </td>
+                <td>
+                    <input type="checkbox" id="pimiento verde" name="ingredientes" value="3">
+                </td>
+                <td>
+                    <label for="pimiento verde">Pimiento verde: 3€</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="cebolla" name="ingredientes" value="3">
+                </td>
+                <td>
+                    <label for="cebolla">Cebolla: 3€</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="jamón" name="ingredientes" value="8">
+                </td>
+                <td>
+                    <label for="jamón">Jamón: 8€</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="pollo" name="ingredientes" value="8">
+                </td>
+                <td>
+                    <label for="pollo">Pollo: 8€</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="atun" name="ingredientes" value="8">
+                </td>
+                <td>
+                    <label for="atun">Atun: 8€</label>
+                </td>
+            </tr>
+        </table>-->
+
+        <br><br>
+
+        <button type="button" id="procesarPedido">Procesar Pedido</button>
+    </form>
+
+    <h3>Total del Pedido: <span id="precioTotal">0</span> </h3>
+</div>
+</body>
+
+</html>
