@@ -1,6 +1,6 @@
 
 
-const URL_DESTINO = "http://localhost:5501/Requerimiento1/assets/"
+const URL_DESTINO = "http://localhost:5500/Requerimiento1/assets/"
 const RECURSO = "pizzas.json"
 
 
