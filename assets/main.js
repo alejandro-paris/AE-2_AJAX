@@ -121,15 +121,8 @@ function comprobarPrecio() {
     xmlHttp.send(null);
 
     xmlHttp.onload = function () {
-        console.log("He pasado por aqu");
-        console.log();
-        console.log(inputsTamano);
-        console.log(ingr);
-
 
         for (let i = 0; i < inputsTamano.length; i++) {
-
-            console.log("He pasado por aqu");
 
             if (inputsTamano[i].checked) {
                 precioTotal += inventario.tamanos[i].precio
@@ -138,19 +131,19 @@ function comprobarPrecio() {
         }
 
         for (let i = 0; i < ingr.length; i++) {
-            console.log("He entrado en ingredientes");
 
             if (ingr[i].checked) {
                 precioTotal += inventario.ingredientes[i].precio;
             }
         }
-        console.log(precioTotal);
+
+        //Una vez que tenemos el precio, ejecutamos la función que lo añade al HTML.
         generarTextoPrecio();
 
+    }
 
-        xmlHttp.onerror = function () {
-            alert("Error al recuperar los precios. Vuelve a intentarlo");
-        }
+    xmlHttp.onerror = function () {
+        alert("Error al recuperar los precios. Vuelve a intentarlo");
     }
 }
 
